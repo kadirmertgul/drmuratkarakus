@@ -11,7 +11,7 @@
     padding: 0;
     height: 100px;
     max-height: 100px;
-    background-color: red;
+    background-color: $color-white;
 
     >.container,
     >.container-fluid {
@@ -1037,8 +1037,8 @@
 
     .header,
     .header-transparent {
-        .nav {
-            background-color: red;
+        .navbar {
+            background-color: $color-white;
         }
 
         .logo-dark {
