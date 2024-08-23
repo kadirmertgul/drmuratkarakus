@@ -13,7 +13,7 @@
     02- Helper Classes
     03- Background & Colors
     04- Typography
-    05- page title 
+    05- page title
     06- Buttons
     07- Forms
     08- Tabs
@@ -25,12 +25,12 @@
     14- Alerts
     16- Carousel
     17- Preloader
-    18- Header & Navbar 
+    18- Header & Navbar
     19- Accordions
     20- Banners
     21- Footer
     22- Call to Action
-    23- Carousel 
+    23- Carousel
     24- Slider
     26- Video
     27- Features
@@ -51,7 +51,7 @@
     41- Progress Bars
 
 ----------------------------*/
-/*-------------------------- 
+/*--------------------------
       Global Styles
 ---------------------------*/
 html {
@@ -240,7 +240,7 @@ textarea {
 }
 
 /*----------------------
-     Dividers 
+     Dividers
 ------------------------*/
 .divider {
   display: inline-block;
@@ -1188,7 +1188,7 @@ h6 {
   }
 }
 /*-------------------------
-    page title 
+    page title
 -------------------------*/
 .header-transparent + .page-title {
   margin-top: -135px;
@@ -1963,7 +1963,7 @@ input[type=radio] {
     bottom: 4px;
   }
 }
-/*------------------- 
+/*-------------------
     Icons
 ------------------*/
 .social-icons {
@@ -2739,7 +2739,7 @@ input[type=radio] {
   border-bottom: 0 !important;
   height: 80px !important;
   max-height: 80px !important;
-  background-color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.07);
   animation: translateHeader 0.8s;
 }
@@ -3199,12 +3199,12 @@ input[type=radio] {
     height: 100%;
     overflow-y: auto;
     padding: 50px 0 20px;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.5) !important;
     transform: translateX(-100%);
     transition: 0.3s ease;
     transition-delay: 0.4s;
   }
-  .navbar .navbar-collapse.menu-opened {
+  . .navbar-collapse.menu-opened {
     opacity: 1;
     visibility: visible;
   }
@@ -3856,7 +3856,7 @@ input[type=radio] {
   }
 }
 /*------------------------
-    Slider 
+    Slider
 --------------------------*/
 .header-transparent + .slider {
   margin-top: -100px;
@@ -4461,7 +4461,7 @@ input[type=radio] {
   }
 }
 /*-----------------------
-     fancybox 
+     fancybox
 ------------------------*/
 .fancybox-item {
   position: relative;
@@ -6586,7 +6586,7 @@ textarea.form-control {
   }
 }
 /*-----------------------
-    Services 
+    Services
 --------------------------*/
 .service-item {
   position: relative;

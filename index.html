@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
   <meta charset="UTF-8" />
@@ -7,13 +7,51 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="description" content="Medcity - Medical Healthcare HTML5 Template">
   <link href="assets/images/favicon/favicon.png" rel="icon">
-  <title>Medcity - Medical Healthcare HTML5 Template</title>
+  <title>Dr. Murat Karakuş</title>
 
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
   <link rel="stylesheet" href="assets/css/libraries.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://kit.fontawesome.com/e877d7ce0a.js" crossorigin="anonymous"></script>
+  <style>
+      .video-background {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+      }
+      .video-background iframe {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 100%;
+          height: 100%;
+          transform: translate(-50%, -50%);
+          pointer-events: none; /* Tıklanabilirliği devre dışı bırakır */
+      }
+      .gradient-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(to right, #65B9BD, rgba(255, 255, 255, 0));
+      }
+      .custom-input {
+          height: 36px; /* Input yüksekliğini küçültür */
+          font-size: 14px; /* Yazı boyutunu küçültür */
+          padding: 4px 8px; /* İç boşlukları küçültür */
+      }
+      .input-group-text {
+          background-color: #f8f9fa; /* Placeholder arka plan rengini ayarlayabilirsiniz */
+          font-size: 15px; /* Yazı boyutunu küçültür */
+          border: 1px solid #ced4da; /* Kenarlık stilini ayarlar */
+      }
+  </style>
 </head>
 
 <body>
@@ -74,7 +112,7 @@
           </div><!-- /.row -->
         </div><!-- /.container -->
       </div><!-- /.header-top -->
-      <nav class="navbar navbar-expand-lg sticky-navbar">
+      <nav class="navbar navbar-expand-lg sticky-navbar ">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img src="assets/images/logo/logo-light.png" class="logo-light" alt="logo">
@@ -85,134 +123,39 @@
           </button>
           <div class="collapse navbar-collapse" id="mainNavigation">
             <ul class="navbar-nav ml-auto">
-              <li class="nav__item has-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link active">Home</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="index.html" class="nav__item-link">Home Main</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="home-modern.html" class="nav__item-link">Home Modern</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="home-classic.html" class="nav__item-link">Home Classic</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="home-dentist.html" class="nav__item-link">Home Dentist</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="home-pharmacy.html" class="nav__item-link">Home pharmacy</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
+              <li class="nav__item ">
+                <a href="index.html has-dropdown"  class="nav__item-link active">Anasayfa</a>
               </li><!-- /.nav-item -->
               <li class="nav__item has-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">About Us</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="about-us.html" class="nav__item-link">About Us</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="services.html" class="nav__item-link">Our Services</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="services-single.html" class="nav__item-link">single Services</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="pricing.html" class="nav__item-link">Pricing & Plans</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="appointment.html" class="nav__item-link">Appointments</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="faqs.html" class="nav__item-link">Help & FAQs</a>
-                  </li> <!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="gallery.html" class="nav__item-link">Our Gallery</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
+                <a href="about-us.html"  class="nav__item-link">Hakkımızda</a>
               </li><!-- /.nav-item -->
               <li class="nav__item has-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Doctors</a>
+                <a href="#" class="dropdown-toggle nav__item-link">Uzmanlıklar</a>
                 <ul class="dropdown-menu">
                   <li class="nav__item">
-                    <a href="doctors-timetable.html" class="nav__item-link">Doctors Timetable</a>
+                    <a href="service1.html.html" class="nav__item-link">uzmanlık1</a>
                   </li> <!-- /.nav-item -->
                   <li class="nav__item">
-                    <a href="doctors-standard.html" class="nav__item-link">Our Doctors Standard</a>
+                    <a href="service2.html.html" class="nav__item-link">uzmanlık2</a>
                   </li> <!-- /.nav-item -->
                   <li class="nav__item">
-                    <a href="doctors-modern.html" class="nav__item-link">Our Doctors Modern</a>
+                    <a href="service3.html.html" class="nav__item-link">uzmanlık3</a>
                   </li> <!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="doctors-grid.html" class="nav__item-link">Our Doctors Grid</a>
-                  </li> <!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="doctors-single-doctor1.html" class="nav__item-link">Single Doctor 01</a>
-                  </li> <!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="doctors-single-doctor2.html" class="nav__item-link">Single Doctor 02</a>
-                  </li> <!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <li class="nav__item has-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Blog</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="blog.html" class="nav__item-link">Blog Grid</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="blog-single-post.html" class="nav__item-link">Single Blog Post</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <li class="nav__item has-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Shop</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="shop.html" class="nav__item-link">Our Products</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="shop-single-product.html" class="nav__item-link">Products Single</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="cart.html" class="nav__item-link">Cart</a>
-                  </li><!-- /.nav-item -->
                 </ul><!-- /.dropdown-menu -->
               </li><!-- /.nav-item -->
               <li class="nav__item">
-                <a href="contact-us.html" class="nav__item-link">Contacts</a>
+                <a href="contact-us.html" class="nav__item-link">Hasta Videoları</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="contact-us.html" class="nav__item-link">İletişim</a>
               </li><!-- /.nav-item -->
             </ul><!-- /.navbar-nav -->
             <button class="close-mobile-menu d-block d-lg-none"><i class="fas fa-times"></i></button>
           </div><!-- /.navbar-collapse -->
           <div class="d-none d-xl-flex align-items-center position-relative ml-30">
-            <div class="miniPopup-departments-trigger">
-              <span class="menu-lines" id="miniPopup-departments-trigger-icon"><span></span></span>
-              <a href="departments.html">Departments</a>
-            </div>
-            <ul id="miniPopup-departments" class="miniPopup miniPopup-departments dropdown-menu">
-              <li class="nav__item">
-                <a href="department-single.html" class="nav__item-link">Neurology Clinic</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="department-single.html" class="nav__item-link">Cardiology Clinic</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="department-single.html" class="nav__item-link">Pathology Clinic</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="department-single.html" class="nav__item-link">Laboratory Clinic</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="department-single.html" class="nav__item-link">Pediatric Clinic</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="department-single.html" class="nav__item-link">Cardiac Clinic</a>
-              </li><!-- /.nav-item -->
-            </ul> <!-- /.miniPopup-departments -->
-            <a href="appointment.html" class="btn btn__primary btn__rounded ml-30">
+            <a href="#" class="btn btn__primary btn__rounded ml-30">
               <i class="icon-calendar"></i>
-              <span>Appointment</span>
+              <span>Randevu Al</span>
             </a>
           </div>
         </div><!-- /.container -->
@@ -226,87 +169,28 @@
       <div class="slick-carousel m-slides-0"
         data-slick='{"slidesToShow": 1, "arrows": true, "dots": false, "speed": 700,"fade": true,"cssEase": "linear"}'>
         <div class="slide-item align-v-h">
-          <div class="bg-img"><img src="assets/images/sliders/1.jpg" alt="slide img"></div>
+          <div class="video-background">
+            <iframe src="https://www.youtube.com/embed/kzXAcWLrBks?autoplay=1&mute=1&controls=0&loop=1&playlist=kzXAcWLrBks" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="gradient-overlay"></div>
+
           <div class="container">
             <div class="row align-items-center">
               <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
                 <div class="slide__content">
-                  <h2 class="slide__title">Providing Best Medical Care</h2>
-                  <p class="slide__desc">The health and well-being of our patients and their health care team will
-                    always be our priority, so we follow the best practices for cleanliness.</p>
+                  <h2 class="slide__title">Lorem İpsum</h2>
+                  <p class="slide__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget.
+                  </p>
+                 <a href="#"><img src="assets/images/sliders/stars.webp" style="width: 70%; padding-bottom: 20px"></a>
                   <ul class="features-list list-unstyled mb-0 d-flex flex-wrap">
                     <!-- feature item #1 -->
                     <li class="feature-item">
-                      <div class="feature__icon">
-                        <i class="icon-heart"></i>
-                      </div>
-                      <h2 class="feature__title">Examination</h2>
+                      <a href="services.html" class="btn btn__white btn__rounded">
+                        <span>Our Services</span>
+                        <i class="icon-arrow-right"></i>
+                      </a>
                     </li><!-- /.feature-item-->
                     <!-- feature item #2 -->
-                    <li class="feature-item">
-                      <div class="feature__icon">
-                        <i class="icon-medicine"></i>
-                      </div>
-                      <h2 class="feature__title">Prescription </h2>
-                    </li><!-- /.feature-item-->
-                    <!-- feature item #3 -->
-                    <li class="feature-item">
-                      <div class="feature__icon">
-                        <i class="icon-heart2"></i>
-                      </div>
-                      <h2 class="feature__title">Cardiogram</h2>
-                    </li><!-- /.feature-item-->
-                    <!-- feature item #4 -->
-                    <li class="feature-item">
-                      <div class="feature__icon">
-                        <i class="icon-blood-test"></i>
-                      </div>
-                      <h2 class="feature__title">Blood Pressure</h2>
-                    </li><!-- /.feature-item-->
-                  </ul><!-- /.features-list -->
-                </div><!-- /.slide-content -->
-              </div><!-- /.col-xl-7 -->
-            </div><!-- /.row -->
-          </div><!-- /.container -->
-        </div><!-- /.slide-item -->
-        <div class="slide-item align-v-h">
-          <div class="bg-img"><img src="assets/images/sliders/2.jpg" alt="slide img"></div>
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
-                <div class="slide__content">
-                  <h2 class="slide__title">All Aspects Of Medical Practice</h2>
-                  <p class="slide__desc">The health and well-being of our patients and their health care team will
-                    always be our priority, so we follow the best practices for cleanliness.</p>
-                  <ul class="features-list list-unstyled mb-0 d-flex flex-wrap">
-                    <!-- feature item #1 -->
-                    <li class="feature-item">
-                      <div class="feature__icon">
-                        <i class="icon-heart"></i>
-                      </div>
-                      <h2 class="feature__title">Examination</h2>
-                    </li><!-- /.feature-item-->
-                    <!-- feature item #2 -->
-                    <li class="feature-item">
-                      <div class="feature__icon">
-                        <i class="icon-medicine"></i>
-                      </div>
-                      <h2 class="feature__title">Prescription </h2>
-                    </li><!-- /.feature-item-->
-                    <!-- feature item #3 -->
-                    <li class="feature-item">
-                      <div class="feature__icon">
-                        <i class="icon-heart2"></i>
-                      </div>
-                      <h2 class="feature__title">Cardiogram</h2>
-                    </li><!-- /.feature-item-->
-                    <!-- feature item #4 -->
-                    <li class="feature-item">
-                      <div class="feature__icon">
-                        <i class="icon-blood-test"></i>
-                      </div>
-                      <h2 class="feature__title">Blood Pressure</h2>
-                    </li><!-- /.feature-item-->
                   </ul><!-- /.features-list -->
                 </div><!-- /.slide-content -->
               </div><!-- /.col-xl-7 -->
@@ -328,9 +212,8 @@
                 <i class="icon-call3"></i>
               </div><!-- /.contact__icon -->
               <div class="contact__content">
-                <h2 class="contact__title">Emergency Cases</h2>
-                <p class="contact__desc">Please feel free to contact our friendly reception staff with any general or
-                  medical enquiry.</p>
+                <h2 class="contact__title">Bizi Arayın</h2>
+                <p class="contact__desc">Genel veya tıbbi sorularınız için müşteri temsilcilerimizle iletişime geçmekten çekinmeyin.</p>
                 <a href="tel:+201061245741" class="phone__number">
                   <i class="icon-phone"></i> <span>01061245741</span>
                 </a>
@@ -340,33 +223,46 @@
           <div class="col-sm-12 col-md-4">
             <div class="contact-box d-flex">
               <div class="contact__icon">
-                <i class="icon-health-report"></i>
+                <i class="fa-brands fa-whatsapp"></i>
               </div><!-- /.contact__icon -->
               <div class="contact__content">
-                <h2 class="contact__title">Doctors Timetable</h2>
-                <p class="contact__desc">Qualified doctors available six days a week, view our timetable to make an
-                  appointment.</p>
-                <a href="doctors-timetable.html" class="btn btn__white btn__outlined btn__rounded">
-                  <span>View Timetable</span><i class="icon-arrow-right"></i>
+                <h2 class="contact__title">Whatsapp</h2>
+                <p class="contact__desc">Nitelikli kadromuz her zaman hizmetinizdedir; randevu almak için iletişime geçin.</p>
+                <a href="#" class="btn btn__white btn__outlined btn__rounded">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <span>Whatsapp</span>
                 </a>
               </div><!-- /.contact__content -->
             </div><!-- /.contact-box -->
           </div><!-- /.col-md-4 -->
+
           <div class="col-sm-12 col-md-4">
             <div class="contact-box d-flex">
               <div class="contact__icon">
                 <i class="icon-heart2"></i>
               </div><!-- /.contact__icon -->
               <div class="contact__content">
-                <h2 class="contact__title">Opening Hours</h2>
-                <ul class="time__list list-unstyled mb-0">
-                  <li><span>Monday - Friday</span><span>8.00 - 7:00 pm</span></li>
-                  <li><span>Saturday</span><span>9.00 - 10:00 pm</span></li>
-                  <li><span>Sunday</span><span>10.00 - 12:00 pm</span></li>
-                </ul>
+                <h2 class="contact__title">İletişim Formu</h2>
+                <form action="#" method="post">
+                  <div class="mb-3">
+                    <input type="text" class="form-control form-control-sm custom-input" id="fullName" name="fullName" placeholder="Adınız Soyadınız" required>
+                  </div>
+                  <div class="mb-3">
+                    <div class="input-group">
+                      <span class="input-group-text">+90</span>
+                      <input type="tel" class="form-control form-control-sm custom-input" id="phone" name="phone" placeholder="532 532 32 32" aria-label="Telefon Numaranız" required>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn__white btn__outlined btn__rounded">Gönder</button>
+                </form>
               </div><!-- /.contact__content -->
             </div><!-- /.contact-box -->
           </div><!-- /.col-md-4 -->
+
+
+
+
+
         </div><!-- /.row -->
       </div><!-- /.container -->
     </section><!-- /.contact-info -->
@@ -981,7 +877,7 @@
     </section><!-- /.Team -->
 
     <!-- ======================
-     Work Process 
+     Work Process
     ========================= -->
     <section class="work-process work-process-carousel pt-130 pb-0 bg-overlay bg-overlay-secondary">
       <div class="bg-img"><img src="assets/images/banners/1.jpg" alt="background"></div>
@@ -1115,7 +1011,7 @@
       </div><!-- /.cta -->
     </section><!-- /.Work Process -->
 
-    <!-- ========================= 
+    <!-- =========================
       Testimonials layout 2
       =========================  -->
     <section class="testimonials-layout2 pt-130 pb-40">
