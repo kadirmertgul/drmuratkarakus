@@ -14,6 +14,48 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
   <link rel="stylesheet" href="assets/css/libraries.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+      /* Video banner'ı ve yazıyı hizalama */
+      .video-banner {
+          position: relative;
+          width: 100%;
+          overflow: hidden;
+      }
+
+      .video-banner img {
+          width: 100%;
+          height: auto;
+      }
+
+      /* Video butonu */
+      .video__btn {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+      }
+
+      /* Başlık ve metin ayarları */
+      .heading-layout2 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+
+      .heading__title {
+          font-size: 24px;
+          font-weight: bold;
+      }
+
+      .about__Text {
+          margin-top: 20px;
+      }
+
+      .btn {
+          margin-right: 15px;
+      }
+
+  </style>
 </head>
 
 <body>
@@ -74,7 +116,7 @@
           </div><!-- /.row -->
         </div><!-- /.container -->
       </div><!-- /.header-top -->
-      <nav class="navbar navbar-expand-lg sticky-navbar">
+      <nav class="navbar navbar-expand-lg sticky-navbar ">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img src="assets/images/logo/logo-light.png" class="logo-light" alt="logo">
@@ -85,166 +127,45 @@
           </button>
           <div class="collapse navbar-collapse" id="mainNavigation">
             <ul class="navbar-nav ml-auto">
-              <li class="nav__item has-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Home</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="index.html" class="nav__item-link">Home Main</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="home-modern.html" class="nav__item-link">Home Modern</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="home-classic.html" class="nav__item-link">Home Classic</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="home-dentist.html" class="nav__item-link">Home Dentist</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="home-pharmacy.html" class="nav__item-link">Home pharmacy</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
+              <li class="nav__item ">
+                <a href="index.html"  class="nav__item-link ">Anasayfa</a>
               </li><!-- /.nav-item -->
               <li class="nav__item has-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link active">About Us</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="about-us.html" class="nav__item-link">About Us</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="services.html" class="nav__item-link">Our Services</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="services-single.html" class="nav__item-link">single Services</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="pricing.html" class="nav__item-link">Pricing & Plans</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="appointment.html" class="nav__item-link">Appointments</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="faqs.html" class="nav__item-link">Help & FAQs</a>
-                  </li> <!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="gallery.html" class="nav__item-link">Our Gallery</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
+                <a href="about-us.html"  class="nav__item-link active">Hakkımızda</a>
               </li><!-- /.nav-item -->
               <li class="nav__item has-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Doctors</a>
+                <a href="#" class="dropdown-toggle nav__item-link">Uzmanlıklar</a>
                 <ul class="dropdown-menu">
                   <li class="nav__item">
-                    <a href="doctors-timetable.html" class="nav__item-link">Doctors Timetable</a>
+                    <a href="service1.html" class="nav__item-link">uzmanlık1</a>
                   </li> <!-- /.nav-item -->
                   <li class="nav__item">
-                    <a href="doctors-standard.html" class="nav__item-link">Our Doctors Standard</a>
+                    <a href="service2.html" class="nav__item-link">uzmanlık2</a>
                   </li> <!-- /.nav-item -->
                   <li class="nav__item">
-                    <a href="doctors-modern.html" class="nav__item-link">Our Doctors Modern</a>
+                    <a href="service3.html" class="nav__item-link">uzmanlık3</a>
                   </li> <!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="doctors-grid.html" class="nav__item-link">Our Doctors Grid</a>
-                  </li> <!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="doctors-single-doctor1.html" class="nav__item-link">Single Doctor 01</a>
-                  </li> <!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="doctors-single-doctor2.html" class="nav__item-link">Single Doctor 02</a>
-                  </li> <!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <li class="nav__item has-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Blog</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="blog.html" class="nav__item-link">Blog Grid</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="blog-single-post.html" class="nav__item-link">Single Blog Post</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <li class="nav__item has-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Shop</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="shop.html" class="nav__item-link">Our Products</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="shop-single-product.html" class="nav__item-link">Products Single</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="cart.html" class="nav__item-link">Cart</a>
-                  </li><!-- /.nav-item -->
                 </ul><!-- /.dropdown-menu -->
               </li><!-- /.nav-item -->
               <li class="nav__item">
-                <a href="contact-us.html" class="nav__item-link">Contacts</a>
+                <a href="gallery.html" class="nav__item-link">Hasta Videoları</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="contact-us.html" class="nav__item-link">İletişim</a>
               </li><!-- /.nav-item -->
             </ul><!-- /.navbar-nav -->
             <button class="close-mobile-menu d-block d-lg-none"><i class="fas fa-times"></i></button>
           </div><!-- /.navbar-collapse -->
           <div class="d-none d-xl-flex align-items-center position-relative ml-30">
-            <div class="miniPopup-departments-trigger">
-              <span class="menu-lines" id="miniPopup-departments-trigger-icon"><span></span></span>
-              <a href="departments.html">Departments</a>
-            </div>
-            <ul id="miniPopup-departments" class="miniPopup miniPopup-departments dropdown-menu">
-              <li class="nav__item">
-                <a href="department-single.html" class="nav__item-link">Neurology Clinic</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="department-single.html" class="nav__item-link">Cardiology Clinic</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="department-single.html" class="nav__item-link">Pathology Clinic</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="department-single.html" class="nav__item-link">Laboratory Clinic</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="department-single.html" class="nav__item-link">Pediatric Clinic</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="department-single.html" class="nav__item-link">Cardiac Clinic</a>
-              </li><!-- /.nav-item -->
-            </ul> <!-- /.miniPopup-departments -->
-            <a href="appointment.html" class="btn btn__primary btn__rounded ml-30">
+            <a href="#" class="btn btn__primary btn__rounded ml-30">
               <i class="icon-calendar"></i>
-              <span>Appointment</span>
+              <span>Randevu Al</span>
             </a>
           </div>
         </div><!-- /.container -->
       </nav><!-- /.navabr -->
     </header><!-- /.Header -->
 
-    <!-- ========================
-       page title
-    =========================== -->
-    <section class="page-title page-title-layout1 bg-overlay">
-      <div class="bg-img"><img src="assets/images/page-titles/1.jpg" alt="background"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
-            <h1 class="pagetitle__heading">Caring For The Health & Well Being Of Family.</h1>
-            <p class="pagetitle__desc">Medcity has been present in Europe since 1990, offering innovative
-              solutions, specializing in medical services for treatment of medical infrastructure.
-            </p>
-            <div class="d-flex flex-wrap align-items-center">
-              <a href="appointment.html" class="btn btn__primary btn__rounded mr-30">
-                <span>Find A Doctor</span>
-                <i class="icon-arrow-right"></i>
-              </a>
-              <a href="services.html" class="btn btn__white btn__rounded">
-                <span>Our Services</span>
-                <i class="icon-arrow-right"></i>
-              </a>
-            </div>
-          </div><!-- /.col-xl-5 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.page-title -->
 
     <!-- ========================
       About Layout 1
@@ -252,28 +173,7 @@
     <section class="about-layout1 pb-0">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6">
-            <div class="heading-layout2">
-              <h3 class="heading__title mb-40">Improving The Quality Of Your Life Through Better Health.</h3>
-            </div><!-- /heading -->
-          </div><!-- /.col-12 -->
-        </div><!-- /.row -->
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6">
-            <div class="about__Text">
-              <p class="mb-30">Our goal is to deliver quality of care in a courteous, respectful, and compassionate
-                manner. We hope you will allow us to care for you and to be the first and best choice for healthcare.
-              </p>
-              <p class="mb-30">We will work with you to develop individualised care plans, including management of
-                chronic diseases. We are committed to being the region’s premier healthcare network providing patient
-                centered care that inspires clinical and service excellence.</p>
-              <div class="d-flex align-items-center mb-30">
-                <a href="doctors-grid.html" class="btn btn__primary btn__outlined btn__rounded mr-30">
-                  Meet Our Doctors</a>
-                <img src="assets/images/about/singnture.png" alt="singnture">
-              </div>
-            </div>
-          </div><!-- /.col-lg-6 -->
+          <!-- Video Solda -->
           <div class="col-sm-12 col-md-12 col-lg-6">
             <div class="video-banner">
               <img src="assets/images/about/1.jpg" alt="about">
@@ -284,9 +184,29 @@
               </a>
             </div><!-- /.video-banner -->
           </div><!-- /.col-lg-6 -->
+
+          <!-- Yazı Sağda -->
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <div class="heading-layout2">
+              <h3 class="heading__title mb-40">Op. Dr. Murat Karakuş
+              </h3>
+            </div><!-- /heading -->
+            <div class="about__Text">
+              <p class="mb-30">Dr. Murat Karakuş, 1967 yılında Çorum'da doğmuştur. Bursa Erkek Lisesi'ni ve Hacettepe Üniversitesi İngilizce Tıp Fakültesi'ni tamamladıktan sonra, 1993 yılında Rize'de mecburi hizmetini yapmıştır. 1993-1999 yılları arasında Trabzon Karadeniz Teknik Üniversitesi'nde Beyin, Omurilik ve Sinir Cerrahisi ihtisası yapmış, bu süreçte Prof. Dr. Süleyman Baykal ve Prof. Dr. Kayhan Kuzeyli'nin rehberliğinde nöroşirurjiye yönelmiştir.
+              </p>
+              <p class="mb-30">2000-2007 yılları arasında Aksaray Devlet Hastanesi'nde, 2008-2013 yılları arasında ise İstanbul'daki özel hastanelerde çalışmıştır. Ayrıca, Ankara Tıp Fakültesi ve çeşitli kurumlarda mikrodiskektomi ve ameliyatsız bel fıtığı tedavileri eğitimi almıştır.</p>
+              <p class="mb-30">2013-2020 yılları arasında İstanbul İstinye Devlet Hastanesi'nde görev yapmış olan Dr. Karakuş, şu anda özel muayenehanesinde hastalarına hizmet vermektedir. Mikroskop altında bel ve boyun fıtığı ameliyatları, ağrı tedavileri ve radyolojik girişimsel uygulamalar ile ilgilenmektedir. Nöral terapi ve bütüncül tıp yaklaşımına özel ilgi göstermekte, çevresel faktörlere bağlı desteklerle tedavi uygulamaktadır.</p>
+              <div class="d-flex align-items-center mb-30">
+                <a href="doctors-grid.html" class="btn btn__primary btn__outlined btn__rounded mr-30">Meet Our Doctors</a>
+                <img src="assets/images/about/singnture.png" alt="singnture">
+              </div>
+            </div>
+          </div><!-- /.col-lg-6 -->
         </div><!-- /.row -->
       </div><!-- /.container -->
     </section><!-- /.About Layout 1 -->
+
+
 
     <!-- ======================
     Features Layout 1
