@@ -259,7 +259,7 @@
     display: flex;
     align-items: center;
     background-color: #283b6a;
-
+    background: linear-gradient(135deg,#00ACD4,rgba(137,120,80,0.75)) !important;
     .contact__list {
 
         li {
@@ -435,9 +435,7 @@
     margin-top: 10px;
     padding: 10px 20px;
     border-radius: 10px 10px 0 0;
-    color: $color-secondary;
-    background-color: $color-white;
-
+    color: #00ACD4;
     &:after {
         content: "\f078";
         font-family: "Font Awesome 5 Free";

@@ -25,15 +25,29 @@
           height: 100%;
           overflow: hidden;
       }
+
       .video-background iframe {
           position: absolute;
           top: 50%;
           left: 50%;
-          width: 100%;
-          height: 100%;
+          width: 100vw; /* Ekranın tamamını kaplar */
+          height: 56.25vw; /* 16:9 oranına göre yüksekliği ayarlar */
+          max-width: 177.78vh; /* Ekranın yüksekliğine göre genişlik ayarı */
+          max-height: 100vh; /* Yüksekliği tam kaplar */
           transform: translate(-50%, -50%);
           pointer-events: none; /* Tıklanabilirliği devre dışı bırakır */
       }
+
+      /* Mobil cihazlar için ek ayarlamalar */
+      @media (max-width: 768px) {
+          .video-background iframe {
+              width: 90vh; /* Ekranın yüksekliğine göre genişlik ayarı */
+              height: 100vh; /* Yüksekliği tam kaplar */
+          }
+      }
+
+
+
       .gradient-overlay {
           position: absolute;
           top: 0;
@@ -52,6 +66,45 @@
           font-size: 15px; /* Yazı boyutunu küçültür */
           border: 1px solid #ced4da; /* Kenarlık stilini ayarlar */
       }
+      /* Video banner'ı ve yazıyı hizalama */
+      .video-banner {
+          position: relative;
+          width: 100%;
+          overflow: hidden;
+      }
+
+      .video-banner img {
+          width: 100%;
+          height: auto;
+      }
+
+      /* Video butonu */
+      .video__btn {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+      }
+
+      /* Başlık ve metin ayarları */
+      .heading-layout2 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+
+      .heading__title {
+          font-size: 24px;
+          font-weight: bold;
+      }
+
+      .about__Text {
+          margin-top: 20px;
+      }
+
+      .btn {
+          margin-right: 15px;
+      }
   </style>
 </head>
 
@@ -66,48 +119,28 @@
     =========================== -->
 
     <header class="header header-layout1">
-      <div class="header-topbar">
+      <div class="header-topbar" style="background: linear-gradient(135deg,#00ACD4,rgba(137,120,80,0.75)) !important;">
         <div class="container-fluid">
           <div class="row align-items-center">
             <div class="col-12">
               <div class="d-flex align-items-center justify-content-between">
                 <ul class="contact__list d-flex flex-wrap align-items-center list-unstyled mb-0">
-                  <li>
-                    <button class="miniPopup-emergency-trigger" type="button">24/7 Emergency</button>
-                    <div id="miniPopup-emergency" class="miniPopup miniPopup-emergency text-center">
-                      <div class="emergency__icon">
-                        <i class="icon-call3"></i>
-                      </div>
-                      <a href="tel:+201061245741" class="phone__number">
-                        <i class="icon-phone"></i> <span>+2 01061245741</span>
-                      </a>
-                      <p>Please feel free to contact our friendly reception staff with any general or medical enquiry.
-                      </p>
-                      <a href="appointment.html" class="btn btn__secondary btn__link btn__block">
-                        <span>Make Appointment</span> <i class="icon-arrow-right"></i>
-                      </a>
-                    </div><!-- /.miniPopup-emergency -->
+                 <li>
+                    <a class="miniPopup-emergency-trigger" style="background-color: #00ACD4; color: #00ACD4"></a>
                   </li>
                   <li>
-                    <i class="icon-phone"></i><a href="tel:+5565454117">Emergency Line: (002) 01061245741</a>
+                    <i class="icon-phone" style="font-size: 20px; color: white"></i><a href="tel:+905365775494" style="font-size: 18px">0536 577 54 94 </a>
                   </li>
                   <li>
-                    <i class="icon-location"></i><a href="#">Location: Brooklyn, New York</a>
-                  </li>
-                  <li>
-                    <i class="icon-clock"></i><a href="contact-us.html">Mon - Fri: 8:00 am - 7:00 pm</a>
+                    <i class="icon-location" style="font-size: 20px; color: white"></i><a href="https://maps.app.goo.gl/GWCkHNAS5ZbyijKKA" style="font-size: 18px">Dr. Murat Karakuş Acıbadem Hastanesi</a>
                   </li>
                 </ul><!-- /.contact__list -->
                 <div class="d-flex">
                   <ul class="social-icons list-unstyled mb-0 mr-30">
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li ><a href="#" style="font-size: 20px"><i class="fab fa-facebook-f" style="font-size: 20px; margin-top: 5px; color: white"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram" style="font-size: 20px; margin-top: 5px; color: white"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter" style="font-size: 20px; margin-top: 5px; color: white"></i></a></li>
                   </ul><!-- /.social-icons -->
-                  <form class="header-topbar__search">
-                    <input type="text" class="form-control" placeholder="Search...">
-                    <button class="header-topbar__search-btn"><i class="fa fa-search"></i></button>
-                  </form>
                 </div>
               </div>
             </div><!-- /.col-12 -->
@@ -126,7 +159,7 @@
           <div class="collapse navbar-collapse" id="mainNavigation">
             <ul class="navbar-nav ml-auto">
               <li class="nav__item has-dropdown">
-                <a href="index.html"  class="nav__item-link active">Anasayfa</a>
+                <a href="index.html"  class="nav__item-link active" >Anasayfa</a>
               </li><!-- /.nav-item -->
               <li class="nav__item has-dropdown">
                 <a href="about-us.html"  class="nav__item-link">Hakkımızda</a>
@@ -171,10 +204,9 @@
         data-slick='{"slidesToShow": 1, "arrows": true, "dots": false, "speed": 700,"fade": true,"cssEase": "linear"}'>
         <div class="slide-item align-v-h">
           <div class="video-background">
-            <iframe src="https://www.youtube.com/embed/kzXAcWLrBks?autoplay=1&mute=1&controls=0&loop=1&playlist=kzXAcWLrBks" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/AsDuu29HaWo?autoplay=1&mute=1&controls=0&loop=1&playlist=AsDuu29HaWo" frameborder="0" allowfullscreen></iframe>
           </div>
           <div class="gradient-overlay"></div>
-
           <div class="container">
             <nav class="navbar navbar-expand-lg sticky-navbar d-none d-xl-block" style="background-color: transparent; position: absolute; top: 1px; justify-content: space-between ">
               <div class="container-fluid">
@@ -188,30 +220,30 @@
                 <div class="collapse navbar-collapse" id="mainNavigation">
                   <ul class="navbar-nav ml-auto">
                     <li class="nav__item has-dropdown">
-                      <a href="index.html"  class="nav__item-link active">Anasayfa</a>
+                      <a href="index.html"  class="nav__item-link active" style="font-size: 20px">Anasayfa</a>
                     </li><!-- /.nav-item -->
                     <li class="nav__item has-dropdown">
-                      <a href="about-us.html"  class="nav__item-link">Hakkımızda</a>
+                      <a href="about-us.html"  class="nav__item-link" style="font-size: 20px">Hakkımızda</a>
                     </li><!-- /.nav-item -->
                     <li class="nav__item has-dropdown">
-                      <a href="#" class="dropdown-toggle nav__item-link">Uzmanlıklar</a>
+                      <a href="#" class="dropdown-toggle nav__item-link" style="font-size: 20px">Uzmanlıklar</a>
                       <ul class="dropdown-menu">
                         <li class="nav__item">
-                          <a href="service1.html" class="nav__item-link">uzmanlık1</a>
+                          <a href="service1.html" class="nav__item-link" style="font-size: 20px">uzmanlık1</a>
                         </li> <!-- /.nav-item -->
                         <li class="nav__item">
-                          <a href="service2.html" class="nav__item-link">uzmanlık2</a>
+                          <a href="service2.html" class="nav__item-link" style="font-size: 20px">uzmanlık2</a>
                         </li> <!-- /.nav-item -->
                         <li class="nav__item">
-                          <a href="service3.html" class="nav__item-link">uzmanlık3</a>
+                          <a href="service3.html" class="nav__item-link" style="font-size: 20px">uzmanlık3</a>
                         </li> <!-- /.nav-item -->
                       </ul><!-- /.dropdown-menu -->
                     </li><!-- /.nav-item -->
                     <li class="nav__item">
-                      <a href="gallery.html" class="nav__item-link">Hasta Videoları</a>
+                      <a href="gallery.html" class="nav__item-link" style="font-size: 20px">Hasta Videoları</a>
                     </li><!-- /.nav-item -->
                     <li class="nav__item">
-                      <a href="contact-us.html" class="nav__item-link">İletişim</a>
+                      <a href="contact-us.html" class="nav__item-link" style="font-size: 20px">İletişim</a>
                     </li><!-- /.nav-item -->
                   </ul><!-- /.navbar-nav -->
                   <button class="close-mobile-menu d-block d-lg-none"><i class="fas fa-times"></i></button>
@@ -219,12 +251,11 @@
                 <div class="d-none d-xl-flex align-items-center position-relative ml-30">
                   <a href="#" class="btn btn__primary btn__rounded ml-30">
                     <i class="icon-calendar"></i>
-                    <span>Randevu Al</span>
+                    <span style="font-size: 20px;">Randevu Al</span>
                   </a>
                 </div>
               </div><!-- /.container -->
             </nav><!-- /.navabr -->
-            <div class="row align-items-center" style="">
               <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
                 <div class="slide__content">
                   <h2 class="slide__title">Lorem İpsum</h2>
@@ -246,7 +277,6 @@
             </div><!-- /.row -->
           </div><!-- /.container -->
         </div><!-- /.slide-item -->
-      </div><!-- /.carousel -->
     </section><!-- /.slider -->
 
     <!-- ============================
@@ -314,6 +344,41 @@
     <!-- ========================
       About Layout 2
     =========================== -->
+    <section class="about-layout1 pb-0">
+      <div class="container">
+        <div class="row">
+          <!-- Video Solda -->
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <div class="video-banner">
+              <img src="assets/images/about/1.jpg" alt="about">
+              <a class="video__btn video__btn-white popup-video" href="https://www.youtube.com/watch?v=nrJtHemSPW4">
+                <div class="video__player">
+                  <i class="fa fa-play"></i>
+                </div>
+              </a>
+            </div><!-- /.video-banner -->
+          </div><!-- /.col-lg-6 -->
+
+          <!-- Yazı Sağda -->
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <div class="heading-layout2">
+              <h3 class="heading__title mb-40">Op. Dr. Murat Karakuş
+              </h3>
+            </div><!-- /heading -->
+            <div class="about__Text">
+              <p class="mb-30">Dr. Murat Karakuş, 1967 yılında Çorum'da doğmuştur. Bursa Erkek Lisesi'ni ve Hacettepe Üniversitesi İngilizce Tıp Fakültesi'ni tamamladıktan sonra, 1993 yılında Rize'de mecburi hizmetini yapmıştır. 1993-1999 yılları arasında Trabzon Karadeniz Teknik Üniversitesi'nde Beyin, Omurilik ve Sinir Cerrahisi ihtisası yapmış, bu süreçte Prof. Dr. Süleyman Baykal ve Prof. Dr. Kayhan Kuzeyli'nin rehberliğinde nöroşirurjiye yönelmiştir.
+              </p>
+              <p class="mb-30">2000-2007 yılları arasında Aksaray Devlet Hastanesi'nde, 2008-2013 yılları arasında ise İstanbul'daki özel hastanelerde çalışmıştır. Ayrıca, Ankara Tıp Fakültesi ve çeşitli kurumlarda mikrodiskektomi ve ameliyatsız bel fıtığı tedavileri eğitimi almıştır.</p>
+              <p class="mb-30">2013-2020 yılları arasında İstanbul İstinye Devlet Hastanesi'nde görev yapmış olan Dr. Karakuş, şu anda özel muayenehanesinde hastalarına hizmet vermektedir. Mikroskop altında bel ve boyun fıtığı ameliyatları, ağrı tedavileri ve radyolojik girişimsel uygulamalar ile ilgilenmektedir. Nöral terapi ve bütüncül tıp yaklaşımına özel ilgi göstermekte, çevresel faktörlere bağlı desteklerle tedavi uygulamaktadır.</p>
+              <div class="d-flex align-items-center mb-30">
+                <a href="doctors-grid.html" class="btn btn__primary btn__outlined btn__rounded mr-30">Meet Our Doctors</a>
+                <img src="assets/images/about/singnture.png" alt="singnture">
+              </div>
+            </div>
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.About Layout 1 -->
     <!-- ========================
       Footer
     ========================== -->
@@ -418,5 +483,4 @@
   <script src="assets/js/plugins.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
-
 </html>
